@@ -2,96 +2,124 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Archisman Dutta
+    - name: Contact
+      value: "(+91) 62919 61470 | archismandutta@proton.me"
+    - name: Research Interests
+      value: "Verifiable Delay Functions ⋅ Pairing-based Cryptography ⋅ Zero-knowledge Proof Systems ⋅ Secure Messaging ⋅ Lattice-based Cryptography ⋅ Blockchains ⋅ Complexity Theory"
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: B.Sc. (Hons.) in Mathematics and Computer Science
+      institution: Ashoka University, Sonipat, India
+      year: 09/21 – 05/24
+      description:
+        - "CGPA: 3.42/4.00"
+        - "Relevant coursework: Computer Security and Privacy, Elliptic Curves and Cryptography, Lattice-based Cryptography, Algebra 1, Probability and Statistics, Discrete Mathematics, Statistical Inference, Linear Algebra, Algorithm Design and Analysis, Theory of Computation, Applied Category Theory, Symbolic Logic, Data Structures"
+    - title: Summer Abroad
       institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+      year: 07/23 - 08/23
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - "Participated in the ‘Deep Dive into Blockchain’ summer school hosted by the UZH Blockchain Center on a full ride and completed a 6 ECTS credit course."
+        - "Implemented a privacy-focused CBDC auditing model in Rust using Pedersen commitments and IPFS storage/retrieval, coauthored the final report, and gave a technical presentation for the group project."
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Pre-Doctoral Researcher
+      institution: IIT Bombay Trust Lab, Mumbai, India
+      year: 08/24 – Now
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - "Conducting research into constructing verifiable delay functions from pairings and coauthored a paper currently in submission."
+        - "Contributing to a reading group on proof systems, arguments, and zero-knowledge."
+        - "Investigating the correspondence between lattices and error-correcting codes with a specific focus on polar codes and secrecy gain for the wiretap channel."
+    - title: Summer Research Intern
+      institution: IIT Bombay Trust Lab, Mumbai, India
+      year: 05/24 - 07/24
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - "Investigated the complexity-theoretic hardness of syntactic sub-classes like PPAD, PWPP, PPA, and PLS inside TFNP with implications in Karp-reducible problems of cryptographic interest."
+        - "Studied and analyzed the security and concrete efficiency of lattice-based verifiable delay functions, time-lock puzzles, and proofs of sequential work."
+    - title: Security Research Intern
+      institution: Questbook, Remote / Palo Alto, CA
+      year: 08/23 – 03/24
       description:
+        - "Conducted research into improving the performance of Groth16 zk-SNARK proof generation for the Reclaim Protocol and incorporated optimizations in code."
+        - "Benchmarked and tested a number of zero-knowledge proving systems and libraries to integrate with Circom R1CS-based circuits."
+        - "Modified and compiled rapidsnark to platform-agnostic WebAssembly for compatibility with Node and browser environments."
+        - "Investigated methods to enhance custom AES and ChaCha20 circuits designed for verifiable private key ownership proofs using arkworks and PLONKish arithmetization."
+    - title: Undergraduate Research Assistant
+      institution: Ashoka University, Sonipat, India
+      year: 06/23 – 02/2024
+      description:
+        - "Contributed to research funded by WhatsApp to design, implement, and benchmark a secure originator tracing protocol integrable in end-to-end encrypted messaging platforms."
+        - "Coauthored a paper currently in submission that proposes, formalizes, and compares the protocol against existing alternatives to highlight the feasibility of real-world deployment on thin clients."
+        - "Investigated and implemented proof-of-concept algorithmic optimizations for polynomial multiplication using number-theoretic transforms with butterfly interleaving and fast modular operations for efficient lattice-cryptographic operations."
+    - title: System Engineer (Kernel)
+      institution: Subconscious Compute, Remote / Bengaluru, India
+      year: 10/22 – 01/23
+      description:
+        - "Created a systems hardening tool for user-defined seccomp-BPF filtering of syscalls spawned by userland applications on Linux."
+        - "Designed a wrapper around OpenBSD’s pledge/unveil sandboxing mechanisms for restricting the operational capabilities of processes while granting access to essential filesystem paths."
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Papers in Submission
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: "Verifiable Delay Functions from Bilinear Maps"
+      year: 2024
+      description: "Coauthored with Chethan Kamath, Sruthi Sekar, and Hamza Abusalah."
+    - title: "ATAVISM - Private Originator Tracing in End-to-End Encrypted Messaging"
+      year: 2023
+      description: "Coauthored with Debayan Gupta and Arup Mondal."
 
-- title: Honors and Awards
+- title: Projects
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: Applied Cryptography
+      year: 03/23 – 10/23
+      description: "Implemented open-source toy variants of cryptosystems and security protocols in Rust as proof-of-concept."
+    - title: Secure Systems Administration
+      year: 06/21 – 02/23
+      description: "Managed hardened server nodes for hosting web services securely as Docker containers with real-time monitoring and Cloudflare tunneling."
 
-- title: Academic Interests
-  type: nested_list
+- title: Volunteering
+  type: time_table
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - title: IITB Trust Lab
+      year: 06/24
+      description: "Coordinated and led a lab session on Fully Homomorphic Encryption at the ACM summer school using OpenFHE’s Python bindings."
+    - title: Indian Statistical Institute, Kolkata
+      year: 10/23 – 06/24
+      description: "Helped with implementing a complete simulation of Sybil attacks in blockchain and statistical testing of image classification for a PhD student's dissertation."
 
-- title: Other Interests
+- title: Scholarships
+  type: time_table
+  contents:
+    - year: 03/24
+      items:
+        - "Research Excellence Program for Asia (RExPA) fellowship - Tel Aviv University (declined)"
+    - year: 07/23
+      items:
+        - "Industry scholarship - UZH International Summer School"
+
+- title: Certifications
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - "Cryptography I, Stanford Online"
+
+- title: Skills
+  type: list
+  contents:
+    - "Rust ⋅ Python ⋅ Linux ⋅ Shell ⋅ Docker ⋅ WebAssembly ⋅ Typst ⋅ BSD ⋅ LaTeX ⋅ C/C++ ⋅ Vim ⋅ Nix ⋅ Javascript/Typescript ⋅ Circom ⋅ JSON"
+
+- title: Awards
+  type: time_table
+  contents:
+    - year: 2016 – 2018
+      items:
+        - "Three-time SOF National Cyber Olympiad Gold Medalist and Class Topper"
+    - year: 2017
+      items:
+        - "SOF National Cyber Olympiad International Rank 43"
+        - "SOF National Cyber Olympiad Zonal Rank 4"
+
