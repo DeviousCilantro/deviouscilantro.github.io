@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Attended Asiacrypt 2024 at Calcutta. A fun week of talks and socliazing!
+Attended Asiacrypt 2024 at Calcutta. A fun week of talks and socializing!
