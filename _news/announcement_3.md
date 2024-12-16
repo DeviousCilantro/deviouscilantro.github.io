@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Attending Asiacrypt 2024 at Calcutta, India.
+Attended Asiacrypt 2024 at Calcutta. A fun week of talks and socliazing!

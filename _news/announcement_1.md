@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Led a lab session on OpenFHE at the ACM India summer school on the theoretical foundations of cryptography, hosted by Trust Lab. Slides available soon.
+Led a lab session on OpenFHE at the ACM India Theoretical Foundations of Cryptography summer school at IITB. Slides available [here](/assets/pdf/fhe.pdf).

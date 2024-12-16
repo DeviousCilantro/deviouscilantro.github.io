@@ -4,9 +4,9 @@
     - name: Full Name
       value: Archisman Dutta
     - name: Contact
-      value: "(+91) 62919 61470 | archismandutta@proton.me"
+      value: "archismandutta@proton.me"
     - name: Research Interests
-      value: "Verifiable Delay Functions ⋅ Pairing-based Cryptography ⋅ Zero-knowledge Proof Systems ⋅ Secure Messaging ⋅ Lattice-based Cryptography ⋅ Blockchains ⋅ Complexity Theory"
+      value: "Verifiable Delay Functions ⋅ Zero-knowledge Proof Systems ⋅ Secure Messaging ⋅ Lattice-based Cryptography ⋅ Multiparty Computation ⋅ Blockchains ⋅ Complexity Theory"
 
 - title: Education
   type: time_table
@@ -31,7 +31,7 @@
       institution: IIT Bombay Trust Lab, Mumbai, India
       year: 08/24 – Now
       description:
-        - "Conducting research into constructing verifiable delay functions from pairings and coauthored a paper currently in submission."
+        - "Conducting research into constructing verifiable delay functions and time-lock puzzles from pairings and lattices."
         - "Contributing to a reading group on proof systems, arguments, and zero-knowledge."
         - "Investigating the correspondence between lattices and error-correcting codes with a specific focus on polar codes and secrecy gain for the wiretap channel."
     - title: Summer Research Intern
@@ -50,7 +50,7 @@
         - "Investigated methods to enhance custom AES and ChaCha20 circuits designed for verifiable private key ownership proofs using arkworks and PLONKish arithmetization."
     - title: Undergraduate Research Assistant
       institution: Ashoka University, Sonipat, India
-      year: 06/23 – 02/2024
+      year: 06/23 – 02/24
       description:
         - "Contributed to research funded by WhatsApp to design, implement, and benchmark a secure originator tracing protocol integrable in end-to-end encrypted messaging platforms."
         - "Coauthored a paper currently in submission that proposes, formalizes, and compares the protocol against existing alternatives to highlight the feasibility of real-world deployment on thin clients."
@@ -122,4 +122,3 @@
       items:
         - "SOF National Cyber Olympiad International Rank 43"
         - "SOF National Cyber Olympiad Zonal Rank 4"
-

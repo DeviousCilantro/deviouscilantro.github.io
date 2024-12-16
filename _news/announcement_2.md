@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Presented on TLPs and VDFs at the weekly student seminar series at the lab. Slides available soon.
+Presented on TLPs and VDFs at the weekly student seminar series. Slides available [here](/assets/pdf/vdf.pdf).
 
