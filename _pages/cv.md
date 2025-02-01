@@ -5,7 +5,7 @@ title: cv
 nav: true
 nav_order: 5
 cv_pdf: cv.pdf # you can also use external links here
-#description: Please refer to the PDF (on the right) for more details.
+description: Last updated Dec 2024. Please contact for an up-to-date version.
 toc:
   sidebar: left
 ---

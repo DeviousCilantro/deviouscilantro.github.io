@@ -6,7 +6,7 @@
     - name: Contact
       value: "archismandutta@proton.me"
     - name: Research Interests
-      value: "Verifiable Delay Functions ⋅ Zero-knowledge Proof Systems ⋅ Secure Messaging ⋅ Lattice-based Cryptography ⋅ Multiparty Computation ⋅ Blockchains ⋅ Complexity Theory"
+      value: "Multiparty Computation ⋅ Zero-knowledge Proof Systems ⋅ Secure Messaging ⋅ Lattice-based Cryptography ⋅ Blockchains ⋅ Complexity Theory"
 
 - title: Education
   type: time_table
@@ -31,9 +31,9 @@
       institution: IIT Bombay Trust Lab, Mumbai, India
       year: 08/24 – Now
       description:
-        - "Conducting research into constructing verifiable delay functions and time-lock puzzles from pairings and lattices."
+        - "Conducting research into constructing efficient verifiable delay functions and SNARGs for iterated squaring in groups of unknown order"
+        - "Performing a literature review into homomorphic and function secret sharing schemes for branching and RMS programs"
         - "Contributing to a reading group on proof systems, arguments, and zero-knowledge."
-        - "Investigating the correspondence between lattices and error-correcting codes with a specific focus on polar codes and secrecy gain for the wiretap channel."
     - title: Summer Research Intern
       institution: IIT Bombay Trust Lab, Mumbai, India
       year: 05/24 - 07/24
@@ -65,9 +65,6 @@
 - title: Papers in Submission
   type: time_table
   contents:
-    - title: "Verifiable Delay Functions from Bilinear Maps"
-      year: 2024
-      description: "Coauthored with Chethan Kamath, Sruthi Sekar, and Hamza Abusalah."
     - title: "ATAVISM - Private Originator Tracing in End-to-End Encrypted Messaging"
       year: 2023
       description: "Coauthored with Debayan Gupta and Arup Mondal."
