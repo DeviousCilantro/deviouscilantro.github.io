@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Assisting in the lab sessions at the ACM India Introduction to Modern Cryptography winter school at IITM.
+Assisted in the lab sessions at the ACM India Introduction to Modern Cryptography winter school at IITM.
