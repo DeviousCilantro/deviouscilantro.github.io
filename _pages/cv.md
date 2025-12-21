@@ -10,4 +10,4 @@ nav_order: 4
   This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/cv.pdf">Download PDF</a>
 </iframe>
 
-Last updated Apr 2024. Please contact me for an up to date version.
+Last updated Dec 2025. Please contact me for an up to date version.
