@@ -1,0 +1,141 @@
+[site]
+base_url = "https://archisman.org"
+title = "Archisman Dutta"
+description = "Academic homepage of Archisman Dutta, Ph.D. student in cryptography at Aarhus University."
+
+[person]
+name = "Archisman Dutta"
+role = "Ph.D. student in Computer Science"
+affiliation = "Aarhus University"
+affiliation_url = "https://international.au.dk/"
+location = "Aarhus, Denmark"
+email = "archisman@cs.au.dk"
+email_display = "firstname (at) cs (dot) au (dot) dk"
+photo_path = "/assets/img/archisman.jpg"
+photo_alt = "Portrait of Archisman Dutta"
+cv_path = "/assets/pdf/archisman-dutta-cv.pdf"
+github = "https://github.com/DeviousCilantro"
+google_scholar = ""
+dblp = ""
+
+[[person.links]]
+label = "GitHub"
+url = "https://github.com/DeviousCilantro"
+
+[[person.advisors]]
+name = "Peter Scholl"
+url = "https://pascholl.github.io/"
+
+[[person.advisors]]
+name = "Diego F. Aranha"
+url = "https://dfaranha.github.io/"
+
+[about]
+intro = """
+I am a first-year Ph.D. student in the [Cryptography and Security](https://users-cs.au.dk/orlandi/cryptogroup/) group at [Aarhus University](https://international.au.dk/), where I am fortunate to be advised by [Peter Scholl](https://pascholl.github.io/) and [Diego F. Aranha](https://dfaranha.github.io/). Prior to this, I was a pre-doctoral researcher at [IIT Bombay Trust Lab](https://trustlab.iitb.ac.in/), hosted by [Chethan Kamath](https://www.cse.iitb.ac.in/~ckamath/) and [Sruthi Sekar](https://sruthisekar.wordpress.com/). I completed a B.Sc. in Mathematics and Computer Science at [Ashoka University](https://www.ashoka.edu.in/).
+
+My research is in theoretical and practical aspects of cryptography, with current interests around correlated randomness in secure computation, indistinguishability obfuscation, and complexity-theoretic techniques in cryptographic protocols.
+"""
+interests = [
+  "pseudorandom correlations",
+  "indistinguishability obfuscation",
+  "cryptography and complexity theory"
+]
+
+# Left-column title on /research/.
+[research]
+heading = "Cryptography and complexity"
+summary = '''
+I am mainly interested in the algebraic and complexity-theoretic foundations of cryptographic protocols. At the moment, I am thinking about PCFs for \(\mathsf{VOLE}\) from \(\mathsf{DCR}\)-like assumptions, and investigating the feasibility of building polynomial iO using proof complexity techniques. I also have prior work on private originator tracing for end-to-end encrypted messaging.
+'''
+
+[[research.directions]]
+title = "Pseudorandom correlations"
+text = "Constructions of PCGs/PCFs for additive correlations from algebraic assumptions."
+
+[[research.directions]]
+title = "Cryptographic notions from proof complexity"
+text = "Feasibility of cryptographic primitives from proof complexity techniques."
+
+[[research.manuscripts]]
+title = "ATAVISM: Private Originator Tracing in End-to-End Encrypted Messaging"
+authors = [
+  { name = "Archisman Dutta", url = "/" },
+  { name = "Debayan Gupta", url = "https://debayangupta.com/" },
+  { name = "Arup Mondal", url = "https://www.ashoka.edu.in/profile/arup-mondal/" }
+]
+status = "Manuscript, in submission"
+year = "2025"
+abstract_text = """
+ATAVISM studies private originator tracing for end-to-end encrypted messaging. The protocol aims to identify the originator of a reported forwarding chain while preserving the privacy of intermediate parties and retaining the essential privacy guarantees of end-to-end encryption. The work formalizes the tracing problem, compares against existing approaches, and includes an implementation and benchmark evaluation.
+"""
+links = []
+
+[[news]]
+date = "2026-01"
+text = "Started as graduate teaching assistant for Distributed Systems and Security at [Aarhus University](https://international.au.dk/)."
+
+[[news]]
+date = "2025-09"
+text = "Started Ph.D. in [Computer Science](https://cs.au.dk/) at [Aarhus University](https://international.au.dk/)."
+
+[[news]]
+date = "2025-06"
+text = "Presented ATAVISM at the [Aarhus Crypto Seminar](https://cs.au.dk/research/cryptography-and-cyber-security/seminar)."
+
+[[news]]
+date = "2024-12"
+text = "Assisted in a public-key cryptography lab session at the [ACM India Winter School on Cryptography](https://cystar.iitm.ac.in/acm-india-winter/) at IIT Madras."
+
+[[teaching]]
+role = "Graduate Teaching Assistant"
+institution = "Aarhus University"
+institution_url = "https://international.au.dk/"
+term = "Spring 2026"
+text = "Distributed Systems and Security. Grading, discussion sessions, and office hours."
+
+[[teaching]]
+role = "Lab assistant"
+institution = "ACM India winter school on cryptography, IIT Madras"
+institution_url = "https://cystar.iitm.ac.in/acm-india-winter/"
+term = "Dec 2024"
+text = "Public-key cryptography lab session."
+
+[[teaching]]
+role = "Lab lead"
+institution = "ACM India summer school on theoretical foundations of cryptography, IIT Bombay"
+institution_url = "https://trustlab.iitb.ac.in/event/acm-india-summer-school-2024-theoretical-foundations-of-cryptography"
+term = "Jun 2024"
+text = "Fully homomorphic encryption lab using OpenFHE's Python bindings."
+
+[[service]]
+role = "External reviewer / subreviewer"
+venue = "EUROCRYPT"
+venue_url = "https://eurocrypt.iacr.org/2026/"
+year = "2026"
+
+[[service]]
+role = "External reviewer / subreviewer"
+venue = "CRYPTO"
+venue_url = "https://crypto.iacr.org/2026/"
+year = "2026"
+
+[[talks]]
+title = "Private Originator Tracing in End-to-End Encrypted Messaging"
+venue = "Aarhus Crypto Seminar"
+venue_url = "https://cs.au.dk/research/cryptography-and-cyber-security/seminar"
+date = "Jun 2025"
+links = [{ label = "slides", url = "/assets/slides/atavism.pdf" }]
+
+[[talks]]
+title = "Time-Lock Puzzles and Verifiable Delay Functions"
+venue = "Trust Lab student seminar"
+date = "Oct 2024"
+links = [{ label = "slides", url = "/assets/slides/vdf.pdf" }]
+
+[[talks]]
+title = "Fully Homomorphic Encryption Lab"
+venue = "ACM India summer school on theoretical foundations of cryptography"
+venue_url = "https://trustlab.iitb.ac.in/event/acm-india-summer-school-2024-theoretical-foundations-of-cryptography"
+date = "Jun 2024"
+links = [{ label = "slides", url = "/assets/slides/fhe.pdf" }]

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}CV · {{ data.person.name }}{% endblock title %}
+{% block canonical_path %}/cv/{% endblock canonical_path %}
+{% block content %}
+<section class="shell cv-shell">
+  <div class="cv-heading">
+    <div>
+      <p class="eyebrow">Curriculum vitae</p>
+      <h1>CV</h1>
+    </div>
+    <div class="cv-actions">
+      <a class="button" href="{{ data.person.cv_path }}">Open PDF</a>
+      <a class="button secondary" href="{{ data.person.cv_path }}" download>Download</a>
+    </div>
+  </div>
+
+  <section class="cv-viewer panel" aria-label="Embedded curriculum vitae PDF">
+    <object class="cv-embed" data="{{ data.person.cv_path }}#view=FitH" type="application/pdf">
+      <div class="cv-fallback">
+        <h2>{{ data.person.name }}</h2>
+        <p>Your browser did not display the embedded PDF.</p>
+        <p><a class="button" href="{{ data.person.cv_path }}">Open CV PDF</a></p>
+      </div>
+    </object>
+  </section>
+</section>
+{% endblock content %}

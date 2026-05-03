@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}Research · {{ data.person.name }}{% endblock title %}
+{% block canonical_path %}/research/{% endblock canonical_path %}
+{% block content %}
+<section class="shell page-grid">
+  <aside class="page-kicker">
+    <p class="eyebrow">Research</p>
+    <h1>{{ data.research.heading }}</h1>
+  </aside>
+  <div class="page-body">
+    <section class="prose lead-block">
+      {{ data.research.summary | markdown | safe }}
+    </section>
+
+    <section class="section-block">
+      <div class="section-head"><h2>Current directions</h2></div>
+      <div class="direction-list">
+        {% for direction in data.research.directions %}
+        <article class="direction">
+          <h3>{{ direction.title }}</h3>
+          <p>{{ direction.text | inline_markdown | safe }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head"><h2>Manuscripts</h2></div>
+      {% for paper in data.research.manuscripts %}
+      <article class="paper">
+        <h3>{{ paper.title }}</h3>
+        <p class="authors">{% for author in paper.authors %}<a href="{{ author.url }}">{{ author.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+        <p class="meta">{{ paper.status }} · {{ paper.year }}</p>
+        <div class="prose abstract">{{ paper.abstract_text | markdown | safe }}</div>
+        {% if paper.links | length > 0 %}
+        <p class="links">{% for link in paper.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </section>
+
+    <section class="section-block">
+      <div class="section-head"><h2>Talks and material</h2></div>
+      <ol class="talk-list">
+        {% for talk in data.talks %}
+        <li>
+          <span class="talk-title">{{ talk.title }}</span>
+          <span class="meta">{% if talk.venue_url and talk.venue_url != "" %}<a href="{{ talk.venue_url }}">{{ talk.venue }}</a>{% else %}{{ talk.venue }}{% endif %} · {{ talk.date }}</span>
+          {% if talk.links | length > 0 %}<span class="links">{% for link in talk.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</span>{% endif %}
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+  </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}{{ data.person.name }}{% endblock title %}
+{% block canonical_path %}/{% endblock canonical_path %}
+{% block content %}
+<section class="shell home-grid">
+  <aside class="identity panel" aria-label="Identity">
+    {% if data.person.photo_path and data.person.photo_path != "" %}
+    <figure class="portrait-frame">
+      <img class="portrait" src="{{ data.person.photo_path }}" alt="{{ data.person.photo_alt }}" width="640" height="640" decoding="async">
+    </figure>
+    {% endif %}
+    <p class="eyebrow">{{ data.person.role }}</p>
+    <h1>{{ data.person.name }}</h1>
+    <p class="affiliation">{% if data.person.affiliation_url and data.person.affiliation_url != "" %}<a href="{{ data.person.affiliation_url }}">{{ data.person.affiliation }}</a>{% else %}{{ data.person.affiliation }}{% endif %} · {{ data.person.location }}</p>
+    <dl class="contact-list">
+      <div><dt>Email</dt><dd><a href="mailto:{{ data.person.email }}">{{ data.person.email_display }}</a></dd></div>
+      <div><dt>Advisors</dt><dd>{% for advisor in data.person.advisors %}<a href="{{ advisor.url }}">{{ advisor.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</dd></div>
+      <div><dt>Links</dt><dd>{% for link in data.person.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</dd></div>
+    </dl>
+    <a class="button" href="/cv/">View CV</a>
+  </aside>
+
+  <section class="main-copy">
+    <div class="intro prose">
+      {{ data.about.intro | markdown | safe }}
+    </div>
+
+    <section class="section-block">
+      <div class="section-head">
+        <h2>Research interests</h2>
+      </div>
+      <ul class="interest-list">
+        {% for interest in data.about.interests %}<li>{{ interest }}</li>{% endfor %}
+      </ul>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <h2>Manuscripts</h2>
+        <a href="/research/">details</a>
+      </div>
+      {% for paper in data.research.manuscripts %}
+      <article class="paper compact">
+        <h3>{{ paper.title }}</h3>
+        <p class="authors">{% for author in paper.authors %}<a href="{{ author.url }}">{{ author.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>
+        <p class="meta">{{ paper.status }} · {{ paper.year }}</p>
+      </article>
+      {% endfor %}
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <h2>Recent</h2>
+      </div>
+      <ol class="news-list">
+        {% for item in data.news %}
+        <li><time>{{ item.date }}</time><span>{{ item.text | inline_markdown | safe }}</span></li>
+        {% endfor %}
+      </ol>
+    </section>
+  </section>
+</section>
+{% endblock content %}

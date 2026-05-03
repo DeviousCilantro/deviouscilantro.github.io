@@ -1,0 +1,146 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=0.82in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{titlesec}
+
+\definecolor{linkblue}{RGB}{0,63,135}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=linkblue,
+  linkcolor=linkblue
+}
+\urlstyle{same}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.25em}
+\setlist[itemize]{leftmargin=1.2em, topsep=0.2em, itemsep=0.15em, parsep=0em}
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\vspace{0.12em}\titlerule]
+\titlespacing*{\section}{0pt}{1.05em}{0.55em}
+
+\newcommand{\cvheading}[4]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+    \textbf{#1} & #2 \\
+    \emph{#3} & \emph{#4}
+  \end{tabular*}
+  \vspace{-0.35em}
+}
+
+\newcommand{\simpleentry}[2]{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+    #1 & #2
+  \end{tabular*}
+}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE \textbf{Archisman Dutta}}\\[0.35em]
+  \href{mailto:archisman@cs.au.dk}{archisman@cs.au.dk} \;|\;
+  \href{https://archisman.org}{archisman.org} \;|\;
+  \href{https://github.com/DeviousCilantro}{github.com/DeviousCilantro}
+\end{center}
+
+\section*{Research interests}
+Theoretical cryptography; pseudorandom correlations; indistinguishability obfuscation; complexity-theoretic techniques.
+
+\section*{Education}
+\cvheading{Aarhus University}{Aarhus, Denmark}{Ph.D. in Computer Science}{Sep 2025 -- present}
+\begin{itemize}
+  \item Advisors: Peter Scholl and Diego F. Aranha.
+  \item Selected coursework: Cryptographic Computing; Succinct Proofs; Cryptologic Protocol Theory; Randomized Algorithms.
+\end{itemize}
+
+\cvheading{Ashoka University}{Sonipat, India}{B.Sc. (Hons.) in Mathematics and Computer Science}{Sep 2021 -- May 2024}
+\begin{itemize}
+  \item CGPA: 3.42/4.00.
+  \item Selected coursework: Algorithms; Theory of Computation; Symbolic Logic; Algebra; Probability and Statistics; Computer Security; Elliptic-Curve and Lattice-Based Cryptography.
+\end{itemize}
+
+\cvheading{University of Zurich}{Zurich, Switzerland}{Deep Dive into Blockchain summer school}{Jul 2023 -- Aug 2023}
+\begin{itemize}
+  \item Attended the UZH Blockchain Center summer school on a full scholarship; completed a group project on privacy-preserving CBDC auditing using Pedersen commitments and IPFS.
+\end{itemize}
+
+\section*{Manuscripts}
+\begin{itemize}
+  \item \textbf{ATAVISM: Private Originator Tracing in End-to-End Encrypted Messaging}, with Debayan Gupta and Arup Mondal. Manuscript, 2025.
+\end{itemize}
+
+\section*{Research experience}
+\cvheading{Aarhus University}{Aarhus, Denmark}{Graduate Research Assistant}{Sep 2025 -- present}
+\begin{itemize}
+  \item Working on pseudorandom correlation functions for VOLE from DCR-style assumptions, with possible applications to designated-verifier exponent-VRFs and threshold Schnorr signatures.
+\end{itemize}
+
+\cvheading{IIT Bombay Trust Lab}{Mumbai, India}{Pre-Doctoral Researcher}{Aug 2024 -- May 2025}
+\begin{itemize}
+  \item Studied circular-secure publicly verifiable time-lock puzzles and timed commitments from algebraic assumptions.
+  \item Reviewed homomorphic and function secret sharing for branching and RMS programs, group correlations, and pseudorandom correlation generators.
+  \item Participated in a reading group on proof systems, arguments, and zero knowledge.
+\end{itemize}
+
+\cvheading{IIT Bombay Trust Lab}{Mumbai, India}{Summer Research Intern}{May 2024 -- Jul 2024}
+\begin{itemize}
+  \item Investigated the complexity-theoretic hardness of TFNP subclasses including PPAD, PWPP, PPA, and PLS, with attention to cryptographically relevant Karp reductions.
+  \item Studied lattice-based verifiable delay functions, time-lock puzzles, and proofs of sequential work.
+\end{itemize}
+
+\cvheading{Ashoka University}{Sonipat, India}{Undergraduate Research Assistant}{Jun 2023 -- Jan 2024}
+\begin{itemize}
+  \item Contributed to a WhatsApp-funded project on secure originator tracing for end-to-end encrypted messaging, focusing on deployability without revealing intermediate forwarding parties.
+  \item Coauthored a manuscript formalizing and benchmarking the protocol against existing alternatives.
+  \item Implemented prototype optimizations for number-theoretic transforms and fast modular arithmetic for lattice-based cryptographic operations.
+\end{itemize}
+
+\cvheading{Questbook}{Remote / Palo Alto, CA}{Security Research Intern}{Aug 2023 -- Mar 2024}
+\begin{itemize}
+  \item Improved and benchmarked Groth16 proof generation for Circom R1CS-based circuits in the Reclaim Protocol.
+  \item Compiled \texttt{rapidsnark} to platform-agnostic WebAssembly and evaluated proof-system libraries for browser and Node environments.
+  \item Studied optimizations for AES and ChaCha20 circuits using arkworks and PLONKish arithmetization.
+\end{itemize}
+
+\section*{Teaching}
+\cvheading{Aarhus University}{Aarhus, Denmark}{Graduate Teaching Assistant, Distributed Systems and Security}{Jan 2026 -- present}
+\begin{itemize}
+  \item Grade assignments, hold discussion sessions, and answer student questions in office hours.
+\end{itemize}
+
+\begin{itemize}
+  \item Lab assistant, public-key cryptography, ACM India winter school on cryptography, IIT Madras, Dec 2024.
+  \item Lab lead, fully homomorphic encryption with OpenFHE, ACM India summer school on theoretical foundations of cryptography, IIT Bombay, Jun 2024.
+\end{itemize}
+
+\section*{Talks}
+\begin{itemize}
+  \item Private Originator Tracing in End-to-End Encrypted Messaging. Aarhus Crypto Seminar, Jun 2025.
+  \item Time-Lock Puzzles and Verifiable Delay Functions. Student seminar, Oct 2024.
+  \item Fully Homomorphic Encryption Lab. ACM India summer school on theoretical foundations of cryptography, Jun 2024.
+\end{itemize}
+
+\section*{Service}
+\begin{itemize}
+  \item External reviewer / subreviewer: EUROCRYPT 2026; CRYPTO 2026.
+\end{itemize}
+
+\section*{Fellowships and travel support}
+\begin{itemize}
+  \item Research Excellence Program for Asia fellowship, Tel Aviv University, 2024 (declined).
+  \item Industry scholarship, University of Zurich Blockchain Center summer school, 2023.
+  \item Travel support: TCC 2025 (Aarhus University); RWC 2025 (IACR); TPMPC 2025 (IISc); ASIACRYPT 2024 (IIT Bombay Trust Lab).
+\end{itemize}
+
+\section*{Technical background}
+Rust, Python, C/C++, Go, Linux, shell scripting, Docker, WebAssembly, Circom, LaTeX.
+
+\vfill
+{\footnotesize Last updated: May 2026.}
+
+\end{document}

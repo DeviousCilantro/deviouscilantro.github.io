@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{% block title %}{{ data.site.title }}{% endblock title %}</title>
+  <meta name="description" content="{{ data.site.description }}">
+  <link rel="canonical" href="{{ data.site.base_url }}{% block canonical_path %}/{% endblock canonical_path %}">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)'], ['$', '$']],
+        displayMath: [['\\[', '\\]'], ['$$', '$$']],
+        processEscapes: true
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <a class="wordmark" href="/" data-route="home">{{ data.person.name }}</a>
+    <div class="header-actions">
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="/research/" data-route="research">Research</a>
+        <a href="/teaching/" data-route="teaching">Teaching</a>
+        <a href="/cv/" data-route="cv">CV</a>
+        <a href="{{ data.person.github }}">GitHub</a>
+      </nav>
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme" aria-pressed="false">
+        <span data-theme-label>Theme</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="content">
+    {% block content %}{% endblock content %}
+  </main>
+
+  <footer class="site-footer">
+    <span>© {{ build.year }} {{ data.person.name }}</span>
+    <span class="dotsep">Built as static HTML from Rust; math rendered with MathJax.</span>
+  </footer>
+
+  <script type="module">
+    import init from '/assets/wasm/archisman_site_wasm.js';
+    init().catch(() => {});
+  </script>
+</body>
+</html>

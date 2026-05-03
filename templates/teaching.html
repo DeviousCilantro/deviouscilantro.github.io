@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Teaching · {{ data.person.name }}{% endblock title %}
+{% block canonical_path %}/teaching/{% endblock canonical_path %}
+{% block content %}
+<section class="shell page-grid">
+  <aside class="page-kicker">
+    <p class="eyebrow">Teaching</p>
+    <h1>Teaching and service</h1>
+  </aside>
+  <div class="page-body">
+    <section class="section-block first">
+      <div class="section-head"><h2>Teaching</h2></div>
+      <div class="entry-list">
+        {% for item in data.teaching %}
+        <article class="entry">
+          <h3>{{ item.role }}</h3>
+          <p class="meta">{% if item.institution_url and item.institution_url != "" %}<a href="{{ item.institution_url }}">{{ item.institution }}</a>{% else %}{{ item.institution }}{% endif %} · {{ item.term }}</p>
+          <p>{{ item.text | inline_markdown | safe }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head"><h2>Service</h2></div>
+      <ol class="service-list">
+        {% for item in data.service %}
+        <li><span>{{ item.role }}</span><span class="meta">{% if item.venue_url and item.venue_url != "" %}<a href="{{ item.venue_url }}">{{ item.venue }}</a>{% else %}{{ item.venue }}{% endif %} {{ item.year }}</span></li>
+        {% endfor %}
+      </ol>
+    </section>
+  </div>
+</section>
+{% endblock content %}
