@@ -43,18 +43,14 @@ interests = [
 ]
 
 [research]
-heading = "Cryptography, complexity theory"
+heading = "Cryptography, Complexity Theory"
 summary = '''
-I am mainly interested in the algebraic and complexity-theoretic foundations of cryptographic protocols. At the moment, I am thinking about PCFs for VOLE from DCR-like assumptions, and investigating the feasibility of building polynomial iO using proof complexity techniques. I also have prior work on private originator tracing for end-to-end encrypted messaging.
+I am mainly interested in the algebraic and complexity-theoretic foundations of cryptographic protocols. At the moment, I am thinking about PCFs for VOLE from DCR-like assumptions, and investigating the feasibility of building polynomial iO using proof complexity techniques.
 '''
 
 [[research.directions]]
 title = "Pseudorandom correlations"
 text = "Constructions of PCGs/PCFs for additive correlations from algebraic assumptions."
-
-[[research.directions]]
-title = "Cryptographic notions from proof complexity"
-text = "Feasibility of cryptographic primitives from proof complexity techniques."
 
 [[research.manuscripts]]
 title = "ATAVISM: Private Originator Tracing in End-to-End Encrypted Messaging"
@@ -63,7 +59,7 @@ authors = [
   { name = "Debayan Gupta", url = "https://debayangupta.com/" },
   { name = "Arup Mondal", url = "https://www.ashoka.edu.in/profile/arup-mondal/" }
 ]
-status = "Manuscript, in submission"
+status = "In submission"
 year = "2025"
 abstract_text = """
 ATAVISM studies private originator tracing for end-to-end encrypted messaging. The protocol aims to identify the originator of a reported forwarding chain while preserving the privacy of intermediate parties and retaining the essential privacy guarantees of end-to-end encryption. The work formalizes the tracing problem, compares against existing approaches, and includes an implementation and benchmark evaluation.
