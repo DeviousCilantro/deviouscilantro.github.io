@@ -16,7 +16,7 @@
       <div><dt>Email</dt><dd><a href="mailto:{{ data.person.email }}">{{ data.person.email_display }}</a></dd></div>
       <div><dt>Links</dt><dd>{% for link in data.person.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</dd></div>
     </dl>
-    <a class="button" href="/cv/">View CV</a>
+    <a class="button" href="{{ data.person.cv_path }}" download>Download CV</a>
   </aside>
 
   <section class="main-copy">
@@ -26,17 +26,7 @@
 
     <section class="section-block">
       <div class="section-head">
-        <h2>Research interests</h2>
-      </div>
-      <ul class="interest-list">
-        {% for interest in data.about.interests %}<li>{{ interest }}</li>{% endfor %}
-      </ul>
-    </section>
-
-    <section class="section-block">
-      <div class="section-head">
         <h2>Manuscripts</h2>
-        <a href="/research/">details</a>
       </div>
       {% for paper in data.research.manuscripts %}
       <article class="paper compact">
