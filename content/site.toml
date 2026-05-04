@@ -32,9 +32,9 @@ url = "https://dfaranha.github.io/"
 
 [about]
 intro = """
-Hi! I am Archie, and I am a first-year PhD student in the [Cryptography and Security](https://users-cs.au.dk/orlandi/cryptogroup/) group at [Aarhus University](https://international.au.dk/), where I am fortunate to be advised by [Peter Scholl](https://pascholl.github.io/) and [Diego F. Aranha](https://dfaranha.github.io/). Prior to this, I was a predoctoral researcher at [IIT Bombay Trust Lab](https://trustlab.iitb.ac.in/). I completed a BSc in Mathematics and Computer Science at [Ashoka University](https://www.ashoka.edu.in/).
+I am a first-year PhD student in the [Cryptography and Security](https://users-cs.au.dk/orlandi/cryptogroup/) group at [Aarhus University](https://international.au.dk/), where I am fortunate to be advised by [Peter Scholl](https://pascholl.github.io/) and [Diego F. Aranha](https://dfaranha.github.io/). Prior to this, I was a predoctoral researcher at [IIT Bombay Trust Lab](https://trustlab.iitb.ac.in/). I completed a BSc in Mathematics and Computer Science at [Ashoka University](https://www.ashoka.edu.in/).
 
-My research spans theoretical and practical aspects of [cryptography](https://en.wikipedia.org/wiki/Cryptography), with current interests around correlated randomness in secure computation, indistinguishability obfuscation, and complexity-theoretic techniques in cryptographic protocols.
+My research spans theoretical and practical aspects of [cryptography](https://en.wikipedia.org/wiki/Cryptography), with current interests in secure computation, indistinguishability obfuscation, and applications of proof complexity in cryptography.
 """
 interests = [
   "pseudorandom correlations",
