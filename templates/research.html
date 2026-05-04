@@ -13,18 +13,6 @@
     </section>
 
     <section class="section-block">
-      <div class="section-head"><h2>Current directions</h2></div>
-      <div class="direction-list">
-        {% for direction in data.research.directions %}
-        <article class="direction">
-          <h3>{{ direction.title }}</h3>
-          <p>{{ direction.text | inline_markdown | safe }}</p>
-        </article>
-        {% endfor %}
-      </div>
-    </section>
-
-    <section class="section-block">
       <div class="section-head"><h2>Manuscripts</h2></div>
       {% for paper in data.research.manuscripts %}
       <article class="paper">

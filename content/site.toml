@@ -1,13 +1,13 @@
 [site]
 base_url = "https://archisman.org"
 title = "Archisman Dutta"
-description = "Academic homepage of Archisman Dutta, Ph.D. student in cryptography at Aarhus University."
+description = "Academic homepage of Archisman Dutta, PhD student in cryptography at Aarhus University."
 
 [person]
 name = "Archisman Dutta"
-role = "Ph.D. student in Computer Science"
-affiliation = "Aarhus University"
-affiliation_url = "https://international.au.dk/"
+role = "PhD student in Computer Science"
+affiliation = ""
+affiliation_url = ""
 location = "Aarhus, Denmark"
 email = "archisman@cs.au.dk"
 email_display = "firstname (at) cs (dot) au (dot) dk"
@@ -32,21 +32,20 @@ url = "https://dfaranha.github.io/"
 
 [about]
 intro = """
-I am a first-year Ph.D. student in the [Cryptography and Security](https://users-cs.au.dk/orlandi/cryptogroup/) group at [Aarhus University](https://international.au.dk/), where I am fortunate to be advised by [Peter Scholl](https://pascholl.github.io/) and [Diego F. Aranha](https://dfaranha.github.io/). Prior to this, I was a pre-doctoral researcher at [IIT Bombay Trust Lab](https://trustlab.iitb.ac.in/), hosted by [Chethan Kamath](https://www.cse.iitb.ac.in/~ckamath/) and [Sruthi Sekar](https://sruthisekar.wordpress.com/). I completed a B.Sc. in Mathematics and Computer Science at [Ashoka University](https://www.ashoka.edu.in/).
+Hi! I am Archie, and I am a first-year PhD student in the [Cryptography and Security](https://users-cs.au.dk/orlandi/cryptogroup/) group at [Aarhus University](https://international.au.dk/), where I am fortunate to be advised by [Peter Scholl](https://pascholl.github.io/) and [Diego F. Aranha](https://dfaranha.github.io/). Prior to this, I was a predoctoral researcher at [IIT Bombay Trust Lab](https://trustlab.iitb.ac.in/). I completed a BSc in Mathematics and Computer Science at [Ashoka University](https://www.ashoka.edu.in/).
 
-My research is in theoretical and practical aspects of cryptography, with current interests around correlated randomness in secure computation, indistinguishability obfuscation, and complexity-theoretic techniques in cryptographic protocols.
+My research spans theoretical and practical aspects of [cryptography](https://en.wikipedia.org/wiki/Cryptography), with current interests around correlated randomness in secure computation, indistinguishability obfuscation, and complexity-theoretic techniques in cryptographic protocols.
 """
 interests = [
   "pseudorandom correlations",
   "indistinguishability obfuscation",
-  "cryptography and complexity theory"
+  "proof complexity"
 ]
 
-# Left-column title on /research/.
 [research]
-heading = "Cryptography and complexity"
+heading = "Cryptography, complexity theory"
 summary = '''
-I am mainly interested in the algebraic and complexity-theoretic foundations of cryptographic protocols. At the moment, I am thinking about PCFs for \(\mathsf{VOLE}\) from \(\mathsf{DCR}\)-like assumptions, and investigating the feasibility of building polynomial iO using proof complexity techniques. I also have prior work on private originator tracing for end-to-end encrypted messaging.
+I am mainly interested in the algebraic and complexity-theoretic foundations of cryptographic protocols. At the moment, I am thinking about PCFs for VOLE from DCR-like assumptions, and investigating the feasibility of building polynomial iO using proof complexity techniques. I also have prior work on private originator tracing for end-to-end encrypted messaging.
 '''
 
 [[research.directions]]
@@ -77,7 +76,7 @@ text = "Started as graduate teaching assistant for Distributed Systems and Secur
 
 [[news]]
 date = "2025-09"
-text = "Started Ph.D. in [Computer Science](https://cs.au.dk/) at [Aarhus University](https://international.au.dk/)."
+text = "Started PhD in [Computer Science](https://cs.au.dk/) at [Aarhus University](https://international.au.dk/)."
 
 [[news]]
 date = "2025-06"

@@ -117,13 +117,13 @@ body {
 img { max-width: 100%; height: auto; }
 
 a {
+  text-decoration: none;
   color: var(--ink);
-  text-decoration-color: var(--link-decoration);
-  text-underline-offset: 0.17em;
-  text-decoration-thickness: 0.08em;
 }
 
-a:hover { color: var(--accent); text-decoration-color: currentColor; }
+a:hover {
+  text-decoration: underline;
+}
 
 p { margin: 0 0 1rem; }
 
